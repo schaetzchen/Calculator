@@ -1,0 +1,60 @@
+.calculator
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  background: #000000
+  width: 428px
+  height: 800px
+  margin: 20px auto 0 auto
+  padding: 74px 17px
+
+  &__result
+    width: 100%
+    font-size: 60px
+    line-height: 107px
+    font-weight: 400
+    text-align: right
+    overflow: scroll
+
+  &__row
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 14px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__btn
+    width: 88px
+    height: 88px
+    border-radius: 100%
+    border: none
+    outline: none
+    cursor: pointer
+    transition: all .2s ease
+    &_color-light
+      background: $color-grey-light
+      font-size: 34px
+      color: $color-black
+      &:active
+        background: #cccccc
+    &_color-dark
+      background: $color-grey-dark
+      font-size: 40px
+      &:active
+        background: #4f4f4f
+    &_color-orange
+      background: $color-orange
+      font-size: 48px
+      &:active
+        background: #ffd9a9
+    &_size-big
+      width: 190px
+      border-radius: 352px
+      text-align: left
+      padding-left: 35px
+    &_active
+      background: #ffecd4
+      color: #000000
